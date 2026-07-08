@@ -1,0 +1,33 @@
+
+@media only screen and (min-width: 30rem)
+{
+    .album{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media only screen and (min-width: 38rem) {
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    header {
+        grid-template-columns: 1fr auto;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+    }
+    .album{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

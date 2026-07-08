@@ -1,0 +1,112 @@
+:root{
+    --primary-color: #3D405B;
+    --secondary-color: #ccc;
+}
+
+body{
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 40px;
+    column-gap: 8px;
+    align-items: top;
+    border-bottom: 1px solid #ddd;
+    padding: 1rem .75rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color)
+}
+
+header span{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hamburger {
+    background: transparent;
+    border: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 1.5rem;
+}
+
+nav{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    list-style-type: none;
+    text-align: center;
+}
+
+nav .item{
+    text-decoration: none;
+    color: #fff;
+    padding: .8rem 10px;
+}
+
+/* On interaction with hamburger button */
+
+header.open nav{
+    display: flex;
+}
+
+header.open span{
+    display: none;
+}
+
+header.open .hamburger::before {
+    content: "\00D7";
+    font-size: 1.5rem;
+}
+
+/* end on interaction with hamburger button */
+
+/* Main content */
+main{
+    max-width: 800px;
+    margin: 0 auto;
+    padding: .75rem;
+}
+
+main h1{
+    text-align: center;
+}
+
+.album{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.album figure
+{
+    margin: 0;
+    padding: 0;
+}
+
+.album img{
+    width: 100%;
+}
+
+.album figcaption{
+    text-align: center;
+    padding: .5rem;
+    color: #3D405B;
+}
+/* End Main Content */
+
+
+footer{
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 1rem;
+}

@@ -52,6 +52,11 @@ nav .item{
     padding: .8rem 10px;
 }
 
+nav .item:hover{
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
 /* On interaction with hamburger button */
 
 header.open nav{

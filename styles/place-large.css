@@ -1,0 +1,41 @@
+@media only screen and (min-width: 45rem) {
+    .container {
+        grid-template-columns: auto;
+    }
+
+    main {
+        position: relative;
+    }
+
+    section:nth-of-type(1) {
+        position: absolute;
+        top: 5rem;
+        left: 1rem;
+
+    }
+
+    section:nth-of-type(2) {
+        position: absolute;
+        bottom: 5rem;
+        right: 1rem;
+
+    }
+
+    .card {
+        padding: 4rem 2rem;
+        margin: 2rem;
+        text-align: center;
+        background-color: var(--color-card-bg);
+        position: relative;
+    }
+
+    .card h2 {
+        background-color: var(--color-heading-bg);
+        position: absolute;
+        top: .5rem;
+        left: -.8rem;
+        padding: .6rem;
+        width: 80%;
+        color: var(--color-heading-text);
+    }
+}

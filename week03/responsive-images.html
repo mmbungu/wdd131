@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Image</title>
+    <meta name="description" content="This is my WDD 131 – Dynamic Web Fundamentals course website : Responsive Image Example.">
+    <link rel="stylesheet" href="styles/responsive-images.css">
+</head>
+<body>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width:1000px )" srcset="images/template-kinshasa-large.webp">
+                <source media="(min-width: 500px)" srcset="images/template-kinshasa-medium.webp">
+                <img src="images/template-kinshasa-small.webp" alt="A beautiful landscape">
+            </picture>
+        </div>
+    </main>
+</body>
+</html>

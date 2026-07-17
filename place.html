@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place of my city</title>
+    <meta name="description" content="This is my WDD 131 – Dynamic Web Fundamentals course website : Place of my city.">
+    <meta name="author"  content="Mercy Mbungu">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span>Page title</span>
+        </header>
+        <main>
+            <picture>
+                <source media="(min-width: 1000px)" srcset="images/template-kinshasa-large.webp">
+                <source media="(min-width: 500px)" srcset="images/template-kinshasa-medium.webp">
+                <img src="images/template-kinshasa-small.webp" alt="A beautiful landscape">
+            </picture>
+            <section class="card">
+                <h2>Data</h2>
+                <table>
+                    <tr>
+                        <th>Area:</th>
+                        <td>1880 km²</td>
+                    </tr>
+                    <tr>
+                        <th>Population:</th>
+                        <td>12.5 million</td>
+                    </tr>
+                    <tr>
+                        <th>Density:</th>
+                        <td>6650 people/km²</td>
+                    </tr>
+                    <tr>
+                        <th>Languages:</th>
+                        <td>French, Lingala, Kikongo, Tshiluba</td>
+                    </tr>
+                    <tr>
+                        <th>Currency:</th>
+                        <td>Congolese franc</td>
+                    </tr>
+                    <tr>
+                        <th>Timezone:</th>
+                        <td>UTC+1 (West Africa Time)</td>
+                    </tr>
+                </table>
+            </section>
+            <section class="card">
+                <h2>Weather</h2>
+                <img class="weather-icon" src="images/cloud-moon.svg" alt="Weather icon">
+                <table>
+                    <tr>
+                        <th>Temperature:</th>
+                        <td><span id="temperature">20</span>°F</td>
+                    </tr>
+                    <tr>
+                        <th>Conditions:</th>
+                        <td><span id="humidity">50</span>%</td>
+                    </tr>
+                    <tr>
+                        <th>Wind:</th>
+                        <td><span id="windSpeed">5</span> mph</td>
+                    </tr>
+                    <tr>
+                        <th>Wind Chill:</th>
+                        <td><span id="windChill">N/A</span></td>
+                    </tr>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; <span id="currentYear"></span> Mercy Mbungu, Kinshasa</p>
+            <p id="lastModified"></p>
+        </footer>
+    </div>
+</body>
+</html>

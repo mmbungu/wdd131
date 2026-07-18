@@ -4,6 +4,7 @@
     --color-accent: #E6B422;
     --color-text: #1C2A38;
     --color-border: #0B5FA5;
+    --color-red: #FF0000;
     --color-footer-bg: #0B5FA5;
     --color-footer-text: #FFFFFF;
     --color-card-bg: rgba(255, 255, 255, 0.88);
@@ -38,7 +39,7 @@ header{
     text-align: center;
 }
 
-header span
+header h1
 {
     font-family: var(--font-heading);
     font-size: xx-large;
@@ -74,8 +75,7 @@ header span
 .weather-icon{
     width: 64px;
     height: 64px;
-    color: var(--color-accent);
-    fill: var(--color-accent);
+
 }
 
 picture img{

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD131 : Temples</title>
+    <meta name="description" content="This is my WDD 131 – Dynamic Web Fundamentals course website.">
+    <meta name="author" content="Mercy Mbungu">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/filtered-temples-large.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <span>Temple Album</span>
+            <nav>
+                <a class="item" href="#">Home</a>
+                <a class="item" href="#old">Old</a>
+                <a class="item" href="#new">New</a>
+                <a class="item" href="#large">Large</a>
+                <a class="item" href="#small">Small</a>
+            </nav>
+            <div id="hamburger" class="hamburger"></div>
+        </header>
+        <main>
+            <h1>Home</h1>
+            <div id="album" class="album"></div>
+        </main>
+
+        <footer>
+            <p>&copy; <span id="currentYear"></span> Mercy Mbungu, Kinshasa, DR Congo</p>
+            <p id="lastModified"></p>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+
+@media only screen and (min-width: 30rem)
+{
+    .album{
+        grid-template-columns: 1fr 1fr;
+        gap: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 38rem) {
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    header {
+        grid-template-columns: 1fr auto;
+        align-items: center;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: row;
+    }
+    .album{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+    }
+
+    .temple-card__title {
+        font-size: 1rem;
+        min-height: 3.4rem;
+        display: grid;
+        place-items: center;
+    }
+}

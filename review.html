@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Confirmation | WDD 131</title>
+    <meta name="description" content="Confirmation page after submitting a product review.">
+    <meta name="author" content="Mercy Mbungu">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/review.js" defer></script>
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Review Confirmation</h1>
+    </header>
+
+    <main class="confirm">
+        <h2>Thank you!</h2>
+        <p>Your product review has been submitted successfully.</p>
+        <p class="counter">
+            Reviews completed: <strong id="reviewCount">0</strong>
+        </p>
+        <p><a class="back-link" href="form.html">Submit another review</a></p>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentYear"></span> Mercy Mbungu</p>
+        <p>Kinshasa, DR Congo</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>

@@ -76,6 +76,11 @@ legend {
     font-weight: 500;
 }
 
+.required {
+    color: red;
+    font-weight: 500;
+}
+
 input[type="text"],
 input[type="date"],
 select,
